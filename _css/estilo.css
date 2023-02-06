@@ -40,4 +40,42 @@ figure.foto-legenda:hover figcaption{
     opacity: 1;
 }
 
-/*  formatacao do menu   */
+/* formatacao do menu */
+
+nav#menu {
+    display: block;
+}
+
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    left: 300px;
+}
+
+nav#menu li{
+    display: inline-block;
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+}
+
+nav#menu li:hover{
+    background-color: rgba(0, 0, 0, .6);
+}
+
+nav#menu h1{
+    display: none;
+}
+
+nav#menu a{
+    color: #000;
+    text-decoration: none;
+}
+
+nav#menu a:hover{
+    color:#fff
+
+}
