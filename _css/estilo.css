@@ -146,7 +146,7 @@ section#corpo {
 
 }
 
-/*artigo*/
+/*artigo cabeçalho*/
 
 article#noticia-principal h2 {
     font-size: 13pt;
@@ -156,7 +156,7 @@ article#noticia-principal h2 {
     margin: 10px 0px 10px 0px;
 }
 
-header#cabecalho-artigo h1 {
+header#artigo h1 {
     font-family: 'FonteLogo', sans-serif;
     font-size: 20pt;
     color: #606060;
@@ -164,14 +164,14 @@ header#cabecalho-artigo h1 {
     margin-top: 0px;
 }
 
-header#cabecalho-artigo h2 {
+header#artigo h2 {
     font-size: 13pt;
     color: #cecece;
     background-color: #fff;
     margin: 0px;
 }
 
-header#cabecalho-artigo h3 {
+header#artigo h3 {
     font-size: 12px;
     color: #606060;
 }
@@ -220,6 +220,8 @@ table#tabelaaspec caption span {
 
 }
 
+/*lateral*/
+
 aside#lateral {
     display: block;
     width: 350px;
@@ -244,6 +246,7 @@ aside#lateral h2 {
     padding: 5px;
 }
 
+/*rodape*/
 
 footer#rodape {
     clear: both;
