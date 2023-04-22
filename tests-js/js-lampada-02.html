@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Test Lamp 02</title>
+    <meta charset="UTF-8" />
+    <script>
+        let quebrada = false;
+        const pasta = '_imagens';
+        
+        function mudaLampada(statuslampada) {
+            const nomeImagem = `lampada-${statuslampada}.jpg`
+            if (quebrada) return;
+
+            document.getElementById("luz").src = `../${pasta}/${nomeImagem}`;
+            if (statuslampada == 'quebrada') quebrada = true;
+        }
+
+    </script>
+</head>
+
+<body>
+    <h1>Acenda a lâmpada </h1>
+    <img src="../_imagens/lampada-apagada.jpg" id="luz" onmousemove="mudaLampada('acesa')"
+        onmouseout="mudaLampada('apagada')" onclick="mudaLampada('quebrada')" />
+</body>
+
+</html>
