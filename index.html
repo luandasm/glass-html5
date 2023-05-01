@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="_css/estilo.css"/>
 </head>
 
+<script> 
+    function mudaFoto(statusfoto) {
+        const pasta = `_imagens`;
+        const nomeImagem = `${statusfoto}.png`;
+        document.getElementById("icone").src = `./${pasta}/${nomeImagem}`;
+    }
+</script>
+
 <body>
     <div id="interface">
 
@@ -17,16 +25,16 @@
                 <h2>A revolução do Google está chegando</h2>
             </hgroup>
         
-            <img id="icone" src="_imagens/glass-oculos-preto-peq.png"/> 
+            <img id="icone" src="./_imagens/glass-oculos-preto-peq.png"/> 
 
             <nav id="menu">
                 <h1>Menu Principal</h1>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="specs.html">Especificações</a></li>
-                    <li><a href="fotos.html">Fotos</a></li>
-                    <li><a href="multimidia.html">Multimídia</a></li>
-                    <li><a href="fale-conosco.html">Fale conosco</a></li>
+                    <li onmouseover="mudaFoto ('home')" onmouseout="mudaFoto ('glass-oculos-preto-peq')"><a href="index.html">Home</a></li>
+                    <li onmouseover="mudaFoto ('especificacoes')" onmouseout="mudaFoto ('glass-oculos-preto-peq')"><a href="specs.html">Especificações</a></li>
+                    <li onmouseover="mudaFoto ('fotos')" onmouseout="mudaFoto ('glass-oculos-preto-peq')"><a href="fotos.html">Fotos</a></li>
+                    <li onmouseover="mudaFoto ('multimidia')" onmouseout="mudaFoto ('glass-oculos-preto-peq')"><a href="multimidia.html">Multimídia</a></li>
+                    <li onmouseover="mudaFoto ('contato')" onmouseout="mudaFoto ('glass-oculos-preto-peq')"><a href="fale-conosco.html">Fale conosco</a></li>
                 </ul>
             </nav>
 

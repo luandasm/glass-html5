@@ -1,14 +1,44 @@
-Google Glass
-A revolução do Google está chegando
+<!DOCTYPE html>
+<html lang="pt-br">
 
-[AQUI ENTRA UMA FOTO]
+<head>
+    <meta charset="utf-8" />
+    <title>Tudo sobre Google Glass</title>
 
-Menu Principal
-- Home
-- Especificações
-- Fotos
-- Multimídia
-- Fale conosco
+    <link rel="stylesheet" href="_css/estilo.css"/>
+</head>
+
+<script> 
+    function mudaFoto(statusfoto) {
+        const pasta = `_imagens`;
+        const nomeImagem = `${statusfoto}.png`;
+        document.getElementById("icone").src = `./${pasta}/${nomeImagem}`;
+    }
+</script>
+
+<body>
+    <div id="interface">
+
+        <header id="cabecalho">
+            <hgroup>
+                <h1>Google Glass</h1>
+                <h2>A revolução do Google está chegando</h2>
+            </hgroup>
+        
+            <img id="icone" src="./_imagens/contato.png"/> 
+
+            <nav id="menu">
+                <h1>Menu Principal</h1>
+                <ul>
+                    <li onmouseover="mudaFoto ('home')" onmouseout="mudaFoto ('contato')"><a href="index.html">Home</a></li>
+                    <li onmouseover="mudaFoto ('especificacoes')" onmouseout="mudaFoto ('contato')"><a href="specs.html">Especificações</a></li>
+                    <li onmouseover="mudaFoto ('fotos')" onmouseout="mudaFoto ('contato')"><a href="fotos.html">Fotos</a></li>
+                    <li onmouseover="mudaFoto ('multimidia')" onmouseout="mudaFoto ('contato')"><a href="multimidia.html">Multimídia</a></li>
+                    <li onmouseover="mudaFoto ('contato')" onmouseout="mudaFoto ('contato')"><a href="fale-conosco.html">Fale conosco</a></li>
+                </ul>
+            </nav>
+
+        </header>
 
 Fale Conosco > Contato
 Formulário de Contato
@@ -43,5 +73,12 @@ Quero um Google Glass
 
 [BOTÃO ENVIAR]
 
-Copyright 2013 - by Gustavo Guanabara
-Facebook | Twitter
+<footer id="rodape">
+    <p>Copyright &copy; 2013 - by Gustavo Guanabara<br/>
+    <a href= "https://pt-br.facebook.com/cursosemvideo" target="_blank">Facebook</a> | 
+    <a href= "https://Twitter.com/cursosemvideo" target="_blank">Twitter</a></p>
+</footer>
+
+</div>
+</body>
+</html>
