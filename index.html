@@ -9,10 +9,9 @@
 </head>
 
 <script> 
-    function mudaFoto(statusfoto) {
-        const pasta = `_imagens`;
-        const nomeImagem = `${statusfoto}.png`;
-        document.getElementById("icone").src = `./${pasta}/${nomeImagem}`;
+    function mudaFoto(iconName) {
+        const element = document.getElementById("icone");
+        element.className = iconName;
     }
 </script>
 
@@ -20,24 +19,29 @@
     <div id="interface">
 
         <header id="cabecalho">
+            <nav id="menu">
+                <h1>Menu Principal</h1>
+                <ul>
+                    <li onmouseover="mudaFoto ('image-icon home')" onmouseout="mudaFoto ('image-icon glass')"><a href="index.html">Home</a></li>
+                    <li onmouseover="mudaFoto ('image-icon especificacoes')" onmouseout="mudaFoto ('image-icon glass')"><a href="specs.html">Especificações</a></li>
+                    <li onmouseover="mudaFoto ('image-icon fotos')" onmouseout="mudaFoto ('image-icon glass')"><a href="fotos.html">Fotos</a></li>
+                    <li onmouseover="mudaFoto ('image-icon multimidia')" onmouseout="mudaFoto ('image-icon glass')"><a href="multimidia.html">Multimídia</a></li>
+                    <li onmouseover="mudaFoto ('image-icon contato')" onmouseout="mudaFoto ('image-icon glass')"><a href="fale-conosco.html">Fale conosco</a></li>
+                </ul>
+            </nav>
+
             <hgroup>
                 <h1>Google Glass</h1>
                 <h2>A revolução do Google está chegando</h2>
             </hgroup>
-        
-            <img id="icone" src="./_imagens/glass-oculos-preto-peq.png"/> 
-
-            <nav id="menu">
-                <h1>Menu Principal</h1>
-                <ul>
-                    <li onmouseover="mudaFoto ('home')" onmouseout="mudaFoto ('glass-oculos-preto-peq')"><a href="index.html">Home</a></li>
-                    <li onmouseover="mudaFoto ('especificacoes')" onmouseout="mudaFoto ('glass-oculos-preto-peq')"><a href="specs.html">Especificações</a></li>
-                    <li onmouseover="mudaFoto ('fotos')" onmouseout="mudaFoto ('glass-oculos-preto-peq')"><a href="fotos.html">Fotos</a></li>
-                    <li onmouseover="mudaFoto ('multimidia')" onmouseout="mudaFoto ('glass-oculos-preto-peq')"><a href="multimidia.html">Multimídia</a></li>
-                    <li onmouseover="mudaFoto ('contato')" onmouseout="mudaFoto ('glass-oculos-preto-peq')"><a href="fale-conosco.html">Fale conosco</a></li>
-                </ul>
-            </nav>
-
+            <div class="contain-images">
+                <div class="image">
+                    <div class="image-logo"></div>
+                </div>
+                <div class="image">
+                    <div id="icone" class="image-icon glass"></div>
+                </div>
+            </div>
         </header>
         
         <section id="corpo">

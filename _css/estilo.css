@@ -39,16 +39,65 @@ a:hover {
 
 /*cabecalho do site*/
 
-header#cabecalho img#icone {
+.contain-images {
+    width: 100%;
+    display: flex;
+    margin-top: -20px;
+    position: relative;
+}
+
+.image {
+    width: 50%;
+    height: 100%;
+}
+
+.image-logo {
+    height: 50px;
+    background: url(../_imagens/glass-logo-peq.jpg) no-repeat 0px;
+    background-size: 180px;
+}
+
+.image-icon {
+    background-size: contain;
+    min-height: 120px;
+    min-width: 200px;
+    z-index: 2;
+}
+
+.image-icon.glass {
+    background: url(../_imagens/glass-oculos-preto-peq.png) no-repeat 0px;
+}
+
+.image-icon.home {
+    background: url(../_imagens/home.png) no-repeat 0px;
+}
+
+.image-icon.especificacoes {
+    background: url(../_imagens/especificacoes.png) no-repeat 0px;
+
+}
+
+.image-icon.fotos {
+    background: url(../_imagens/fotos.png) no-repeat 0px;
+}
+
+.image-icon.multimidia {
+    background: url(../_imagens/multimidia.png) no-repeat 0px;
+}
+
+.image-icon.contato {
+    background: url(../_imagens/contato.png) no-repeat 0px;
+}
+
+#icone {
     position: absolute;
-    left: 780px;
-    top: 70px;
+    bottom: -40px;
+    right: -35px;
 }
 
 header#cabecalho {
     border-bottom: 1px #606060 solid;
-    height: 150px;
-    background: url(../_imagens/glass-logo-peq.jpg) no-repeat 0px 80px
+    padding-bottom: 15px;
 }
 
 header#cabecalho h1 {
@@ -101,7 +150,10 @@ figure.foto-legenda:hover figcaption {
 /* formatacao do menu */
 
 nav#menu {
-    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
 }
 
 nav#menu ul {
@@ -109,7 +161,7 @@ nav#menu ul {
     text-transform: uppercase;
     position: absolute;
     top: -20px;
-    left: 300px;
+    right: 20px;
 }
 
 nav#menu li {
@@ -175,9 +227,11 @@ header#artigo h3 {
     font-size: 12px;
     color: #606060;
 }
- .right {
+
+.right {
     text-align: right;
- }
+}
+
 /*tabela*/
 
 table#tabelaaspec {
@@ -201,7 +255,7 @@ table#tabelaaspec td.text-align-right {
 }
 
 table#tabelaaspec td.text-align-left {
-    background-color:#dddddd;
+    background-color: #dddddd;
     text-align: left;
 }
 

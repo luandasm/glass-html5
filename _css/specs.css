@@ -1,15 +1,13 @@
-@charset "utf-8"
+@charset "utf-8";
 
-section#conteudo {
+#conteudo {
     width: 1000px;
     margin: auto;
 }
-iframe#frame-specs {
+
+#frame-specs {
     width: 380px;
     height: 280px;
     border: none;
     overflow: hidden;
-}
-iframe#frame-specs::-webkit-scrollbar {
-    display: none;
 }
