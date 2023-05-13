@@ -58,41 +58,45 @@ a:hover {
 }
 
 .image-icon {
+    position: absolute;
+    bottom: -56px;
+    right: -35px;
+    background-repeat: no-repeat;
     background-size: contain;
-    min-height: 120px;
+    background-position: 0;
+    min-height: 150px;
     min-width: 200px;
     z-index: 2;
 }
 
 .image-icon.glass {
-    background: url(../_imagens/glass-oculos-preto-peq.png) no-repeat 0px;
+    background-image: url(../_imagens/glass-oculos-preto-peq.png);
 }
 
 .image-icon.home {
-    background: url(../_imagens/home.png) no-repeat 0px;
+    background-image: url(../_imagens/home.png);
 }
 
 .image-icon.especificacoes {
-    background: url(../_imagens/especificacoes.png) no-repeat 0px;
-
+    background-image: url(../_imagens/especificacoes.png);
+    bottom: -60px;
 }
 
 .image-icon.fotos {
-    background: url(../_imagens/fotos.png) no-repeat 0px;
+    background-image: url(../_imagens/fotos.png);
+    bottom: -62px;
+    right: -15px;
 }
 
 .image-icon.multimidia {
-    background: url(../_imagens/multimidia.png) no-repeat 0px;
+    background-image: url(../_imagens/multimidia.png);
+    bottom: -68px;
 }
 
 .image-icon.contato {
-    background: url(../_imagens/contato.png) no-repeat 0px;
-}
-
-#icone {
-    position: absolute;
-    bottom: -40px;
-    right: -35px;
+    background-image: url(../_imagens/contato.png);
+    bottom: -60px;
+    right: -8px;
 }
 
 header#cabecalho {
@@ -221,6 +225,7 @@ header#artigo h2 {
     color: #cecece;
     background-color: #fff;
     margin: 0px;
+    text-indent: -9px;
 }
 
 header#artigo h3 {

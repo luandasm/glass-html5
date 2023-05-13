@@ -8,37 +8,49 @@
     <link rel="stylesheet" href="_css/estilo.css"/>
 </head>
 
-<script> 
-    function mudaFoto(statusfoto) {
-        const pasta = `_imagens`;
-        const nomeImagem = `${statusfoto}.png`;
-        document.getElementById("icone").src = `./${pasta}/${nomeImagem}`;
-    }
-</script>
+<script src="./_javascript/funcoes.js"></script>
 
 <body>
     <div id="interface">
 
         <header id="cabecalho">
+            <nav id="menu">
+                <h1>Menu Principal</h1>
+                <ul>
+                    <li onmouseover="mudaFoto ('image-icon home')" onmouseout="mudaFoto ('image-icon contato')"><a href="index.html">Home</a></li>
+                    <li onmouseover="mudaFoto ('image-icon especificacoes')" onmouseout="mudaFoto ('image-icon contato')"><a href="specs.html">Especificações</a></li>
+                    <li onmouseover="mudaFoto ('image-icon fotos')" onmouseout="mudaFoto ('image-icon contato')"><a href="fotos.html">Fotos</a></li>
+                    <li onmouseover="mudaFoto ('image-icon multimidia')" onmouseout="mudaFoto ('image-icon contato')"><a href="multimidia.html">Multimídia</a></li>
+                    <li onmouseover="mudaFoto ('image-icon contato')" onmouseout="mudaFoto ('image-icon contato')"><a href="fale-conosco.html">Fale conosco</a></li>
+                </ul>
+            </nav>
+
             <hgroup>
                 <h1>Google Glass</h1>
                 <h2>A revolução do Google está chegando</h2>
             </hgroup>
-        
-            <img id="icone" src="./_imagens/contato.png"/> 
-
-            <nav id="menu">
-                <h1>Menu Principal</h1>
-                <ul>
-                    <li onmouseover="mudaFoto ('home')" onmouseout="mudaFoto ('contato')"><a href="index.html">Home</a></li>
-                    <li onmouseover="mudaFoto ('especificacoes')" onmouseout="mudaFoto ('contato')"><a href="specs.html">Especificações</a></li>
-                    <li onmouseover="mudaFoto ('fotos')" onmouseout="mudaFoto ('contato')"><a href="fotos.html">Fotos</a></li>
-                    <li onmouseover="mudaFoto ('multimidia')" onmouseout="mudaFoto ('contato')"><a href="multimidia.html">Multimídia</a></li>
-                    <li onmouseover="mudaFoto ('contato')" onmouseout="mudaFoto ('contato')"><a href="fale-conosco.html">Fale conosco</a></li>
-                </ul>
-            </nav>
-
+            <div class="contain-images">
+                <div class="image">
+                    <div class="image-logo"></div>
+                </div>
+                <div class="image">
+                    <div id="icone" class="image-icon contato"></div>
+                </div>
+            </div>
         </header>
+        
+        <section id="corpo">
+            <article id="noticia-principal">
+                <header id="artigo">
+                    <hgroup>
+                        <h3>Tecnologia > Inovações</h3>
+                        <h1>Saiba tudo sobre o Google Glass</h1>
+                        <h2>por Gustavo Guanabara</h2>
+                        <h3 class="right">Atualizado em 23/Abril/2013</h3>
+                    </hgroup>
+                </header>
+            </article>
+        </section>
 
 Fale Conosco > Contato
 Formulário de Contato
